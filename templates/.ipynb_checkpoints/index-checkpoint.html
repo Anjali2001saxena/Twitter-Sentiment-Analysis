@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Twitter Sentiment Analysis </title>
+  <link rel="stylesheet" href="../static/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Averia Serif Libre' rel='stylesheet'>
+</head>
+<body>
+
+    <h1 class="heading"> TWITTER SENTIMENT ANALYSIS </h1>
+
+    <img src="../static/background_image.jpg" class="mx-auto d-block" >
+    <img src="../static/twitter.png" class="image" style="position: absolute; top: 150px; left: 100px;">
+    <img src="../static/twitter.png" class="image" style="position: absolute; top: 400px; left: 20px;">
+    <img src="../static/twitter.png" class="image" style="position: absolute; top: 150px; right: 100px;">
+    <img src="../static/twitter.png" class="image" style="position: absolute; top: 400px; right: 20px;">
+
+    <div class="flex-container">
+        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ url_for( 'user') }}';"> USER DASHBOARD </button>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ url_for( 'hashtag') }}';"> HASHTAG DASHBOARD </button>
+    </div>
+    
+</body>
+</html>

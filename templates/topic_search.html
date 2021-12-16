@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Twitter Sentiment Analysis </title>
+  <link rel="stylesheet" href="../static/search.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="flex-container">
+        <form action="/hashtag/submit" method="POST" class="form">
+        <input type="text" class="input" name="topic" placeholder="Enter the topic ...." size="80">
+        <button type="submit" name="submit" class="button" onclick="window.location.href='{{ url_for( 'topic_analysis') }}';"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+
+    <img src="../static/user_search.gif" class="mx-auto d-block">
+</body>
+</html>

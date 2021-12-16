@@ -1,0 +1,37 @@
+html
+{
+  min-width: 100%;
+  min-height: 100%;
+}
+body
+{
+  background-image: linear-gradient(skyblue,blue);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+.heading
+{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Averia Serif Libre';
+    color: white;
+    text-shadow: 3px 3px 5px black;
+    
+}
+
+
+.flex-container
+{
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn
+{
+    box-shadow: 2px 2px 8px black;
+}

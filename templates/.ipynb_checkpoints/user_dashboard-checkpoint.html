@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Twitter Sentiment Analysis </title>
+  <link rel="stylesheet" href="../static/user_dashboard.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Averia Serif Libre' rel='stylesheet'>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+      ['Sentiment', 'Number of tweets'],
+      ['Positive', {{positive}}],
+      ['Negative', {{negative}}],
+      ['Neutral', {{neutral}}]
+    ]);
+    
+      
+      var options = {'title':'Tweet Sentiment Analysis', 'width':600, 'height':600};
+    
+      
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+    </script>
+</head>
+<body>
+
+    <div class="flex-container" style="border-bottom: 2px solid black;">
+        <h1 class="name"> {{name}} </h1>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-section">
+            <div class="card bg-primary text-white">
+                <div class="card-body">{{positive}} Recent Positive Tweets</div>
+            </div>
+            <br>
+            <div class="card bg-warning text-white">
+                <div class="card-body">{{neutral}} Recent Neutral Tweets</div>
+            </div>
+              <br>
+            <div class="card bg-danger text-white">
+                <div class="card-body">{{negative}} Recent Negative Tweets</div>
+            </div>
+        </div>
+        
+        <div id="piechart" class="plot"></div>
+    </div>
+    
+</body>
+</html>

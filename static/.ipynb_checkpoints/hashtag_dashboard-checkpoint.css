@@ -1,0 +1,36 @@
+html
+{
+    background-image : linear-gradient(blue, dark blue);
+}
+.heading
+{
+    margin: 20px 50px;
+    font-family: Averia Serif Libre;
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.flex-container
+{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.flex-section
+{
+    margin: 80px;
+    justify-content: space-evenly;
+}
+
+.plot
+{
+    margin-left: 100px;
+}
+
+.card
+{
+    font-size:larger;
+    justify-content: center;
+}

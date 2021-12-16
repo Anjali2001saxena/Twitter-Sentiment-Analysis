@@ -1,0 +1,32 @@
+.flex-container
+{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.flex-section
+{
+    margin: 80px;
+    justify-content: space-evenly;
+}
+
+.name
+{
+    margin: 30px 50px;
+    font-family: Averia Serif Libre;
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.plot
+{
+    margin-left: 150px;
+}
+
+.card
+{
+    font-size:x-large;
+    justify-content: center;
+}

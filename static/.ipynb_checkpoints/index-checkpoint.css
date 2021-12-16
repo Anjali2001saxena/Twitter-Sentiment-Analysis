@@ -1,0 +1,26 @@
+.heading
+{
+    margin: 20px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 800;
+    font-family: 'Averia Serif Libre';
+    color: rgb(17, 120, 238);
+    text-shadow: 2px 2px 5px black;
+    
+}
+
+.image
+{
+    margin: 100px 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.flex-container
+{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

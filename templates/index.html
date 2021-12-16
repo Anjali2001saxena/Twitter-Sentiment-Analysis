@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Twitter Sentiment Analysis </title>
+  <link rel="stylesheet" href="../static/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Averia Serif Libre' rel='stylesheet'>
+</head>
+<body>
+
+    <h1 class="heading"> TWITTER SENTIMENT ANALYSIS </h1>
+
+    <img src="../static/background_image.gif" class="mx-auto d-block" style="margin: 50px 30px;">
+    
+    <div class="flex-container">
+        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ url_for( 'user') }}';"> USER DASHBOARD </button>
+        <button type="button" class="btn btn-primary" onclick="window.location.href='{{ url_for( 'hashtag') }}';"> HASHTAG DASHBOARD </button>
+    </div>
+    
+</body>
+</html>

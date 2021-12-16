@@ -1,0 +1,45 @@
+html
+{
+  min-width: 100%;
+  min-height: 100%;
+}
+body
+{
+  background-image: linear-gradient(skyblue, blue);
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+.flex-container
+{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.flex-section
+{
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.name
+{
+    margin: 2% 8%;
+    font-family: Averia Serif Libre;
+    font-size: 5vh;
+    font-weight: 500;
+}
+
+.plot
+{
+    margin-left: 150px;
+}
+
+.card
+{
+    font-size:x-large;
+    justify-content: center;
+    box-shadow: 2px 2px 8px black;
+}
