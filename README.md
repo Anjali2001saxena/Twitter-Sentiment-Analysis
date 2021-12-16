@@ -24,6 +24,19 @@ Tweets returned by the API are then parsed to get the content of tweets then twe
 TextBlob uses textblob's sentiment method to predict the sentiment in which if polarity of sentiment is greater than 1 then it is positive, if 0 then neutral else negative.
 
 <br><br>
+## Setup Instructions
+1. Clone the repository <br>
+`git clone https://github.com/Anjali2001saxena/Twitter-Sentiment-Analysis.git`
+2. Change the current working directory <br>
+`cd Twitter-Sentiment-Analysis`
+3. Activate the virual environment <br>
+`venv\Scripts\activate`
+4. Install the requirements <br>
+`pip install -r requirements.txt`
+5. Run the app <br>
+`python app.py`
+
+<br><br>
 ## Tech Stack
 - Python
 - HTML
